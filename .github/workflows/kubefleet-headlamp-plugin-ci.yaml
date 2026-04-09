@@ -45,7 +45,7 @@ jobs:
       - run: npm ci
 
       - name: Lint plugin
-        run: npm run lint-check
+        run: npm run lint
 
       - name: Format check
         run: npm run format -- --check
