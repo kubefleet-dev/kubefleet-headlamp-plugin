@@ -1,0 +1,1 @@
+See [KubeFleet maintainers list](https://github.com/kubefleet-dev/kubefleet/blob/main/MAINTAINERS.md).
