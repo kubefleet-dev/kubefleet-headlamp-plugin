@@ -33,3 +33,7 @@ The KubeFleet project has adopted the CNCF Code of Conduct. Refer to our [Commun
 ## Issue and pull request management
 
 Anyone can comment on issues and submit reviews for pull requests. In order to be assigned an issue or pull request, you can leave a `/assign <your Github ID>` comment on the issue or pull request.
+
+## AI-assisted contributions
+
+We welcome AI-assisted contributions, but they must be of good quality, following existing code patterns and be validated by you as the developer per the DCO Sign Off process.
