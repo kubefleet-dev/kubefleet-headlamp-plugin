@@ -8,6 +8,8 @@ A Headlamp plugin for managing KubeFleet resources via a hub cluster, providing 
 
 The target cluster must have the [KubeFleet](https://kubefleet.dev/) CRDs and hub-agent installed. You can access the cluster using its `kubeconfig`.
 
+The easiest way to get going is to try the [KubeFleet quickstart using kind clusters](https://kubefleet.dev/docs/getting-started/kind/) on your local computer.
+
 ## Development
 
 The plugin requires you have Headlamp (https://headlamp.dev/) available on your machine if you want an end-to-end debugging experience.
