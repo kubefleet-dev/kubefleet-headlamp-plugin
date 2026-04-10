@@ -1,7 +1,7 @@
 name: Release KubeFleet-Manager Plugin
 env:
   NODE_VERSION: '22.X'
-  RELEASE_TAR: 'headlamp-kubefleet-manager-${{ github.event.inputs.releaseVersion }}.tar.gz'
+  RELEASE_TAR: 'kubefleet-manager-${{ github.event.inputs.releaseVersion }}.tar.gz'
 
 on:
   workflow_dispatch:
@@ -46,9 +46,9 @@ jobs:
 
       - name: Create Plugin Archive
         run: |
-          mkdir -p headlamp-kubefleet-manager
-          cp -r dist/* headlamp-kubefleet-manager/
-          tar -czf ${{ env.RELEASE_TAR }} headlamp-kubefleet-manager
+          mkdir -p kubefleet-manager
+          cp -r dist/* kubefleet-manager/
+          tar -czf ${{ env.RELEASE_TAR }} kubefleet-manager
 
       - name: Calculate SHA256 Checksum
         id: checksum
