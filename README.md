@@ -2,6 +2,8 @@
 
 A Headlamp plugin for managing KubeFleet resources via a hub cluster, providing visibility into multi-cluster fleet operations.
 
+![KubeFleet Manager in Headlamp](./kubfleet-manager-01.png)
+
 ## Prerequisites
 
 The target cluster must have the [KubeFleet](https://kubefleet.dev/) CRDs and hub-agent installed.
