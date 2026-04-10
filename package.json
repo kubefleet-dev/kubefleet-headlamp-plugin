@@ -1,6 +1,6 @@
 {
   "name": "kubefleet-manager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Headlamp plugin for KubeFleet multi-cluster management: member clusters, staged resources, placement policies, rollout strategies, and rollout runs.",
   "scripts": {
     "start": "headlamp-plugin start",

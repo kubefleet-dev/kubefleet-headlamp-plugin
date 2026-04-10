@@ -1,9 +1,9 @@
-version: 0.2.0
+version: 0.2.1
 name: kubefleet-manager
 displayName: KubeFleet Manager
-createdAt: "2026-04-10T00:00:00Z"
+createdAt: '2026-04-10T05:44:04Z'
 logoURL: https://raw.githubusercontent.com/cncf/artwork/main/projects/kubefleet/icon/color/kubefleet-icon-color.png
 description: Use KubeFleet to manage resource distribution and cluster configuration across a fleet of Kubernetes clusters.
 annotations:
-  headlamp/plugin/archive-url: 'https://github.com/kubefleet-dev/kubefleet-headlamp-plugin/releases/download/0.2.0/kubefleet-manager-0.2.0.tar.gz'
-  headlamp/plugin/archive-checksum: placeholder-for-sha256-checksum
+  headlamp/plugin/archive-url: https://github.com/kubefleet-dev/kubefleet-headlamp-plugin/releases/download/0.2.1/kubefleet-manager-0.2.1.tar.gz
+  headlamp/plugin/archive-checksum: SHA256:95ea807ac12c4b08c7443b1b3444af73140922aacefe7e7515f2a1bd78704996
