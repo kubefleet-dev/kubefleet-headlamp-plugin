@@ -1,6 +1,7 @@
 name: Release KubeFleet-Manager Plugin
 env:
   NODE_VERSION: '22.X'
+  PLUGIN_NAME: kubefleet-manager
   RELEASE_TAR: 'kubefleet-manager-${{ github.event.inputs.releaseVersion }}.tar.gz'
 
 on:
@@ -46,9 +47,9 @@ jobs:
 
       - name: Create Plugin Archive
         run: |
-          mkdir -p kubefleet-manager
-          cp -r dist/* kubefleet-manager/
-          tar -czf ${{ env.RELEASE_TAR }} kubefleet-manager
+          mkdir -p ${PLUGIN_NAME}
+          cp dist/main.js package.json ${PLUGIN_NAME}
+          tar -czf ${{ env.RELEASE_TAR }} ${PLUGIN_NAME}
 
       - name: Calculate SHA256 Checksum
         id: checksum
