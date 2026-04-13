@@ -2,7 +2,7 @@
 
 A Headlamp plugin for managing KubeFleet resources via a hub cluster, providing visibility into multi-cluster fleet operations.
 
-![KubeFleet Manager in Headlamp](./kubfleet-manager-01.png)
+![KubeFleet Manager in Headlamp](https://raw.githubusercontent.com/kubefleet-dev/kubefleet-headlamp-plugin/refs/heads/main/kubfleet-manager-01.png)
 
 ## Prerequisites
 
