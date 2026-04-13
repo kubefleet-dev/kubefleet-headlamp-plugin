@@ -1,5 +1,7 @@
 # KubeFleet Manager Headlamp Plugin
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/kubefleet-manager)](https://artifacthub.io/packages/search?repo=kubefleet-manager)
+
 A Headlamp plugin for managing KubeFleet resources via a hub cluster, providing visibility into multi-cluster fleet operations.
 
 ![KubeFleet Manager in Headlamp](https://raw.githubusercontent.com/kubefleet-dev/kubefleet-headlamp-plugin/refs/heads/main/kubfleet-manager-01.png)
