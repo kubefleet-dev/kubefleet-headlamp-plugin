@@ -30,6 +30,10 @@ import Typography from '@mui/material/Typography';
 import * as yaml from 'js-yaml';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import {
+  AlphaPlacementPoliciesCapability,
+  AlphaPlacementPolicyDetailsCapability,
+} from './components/AlphaPlacementPoliciesCapability';
 import { FleetConfigurationCapability } from './components/FleetConfigurationCapability';
 import { MemberClustersCapability } from './components/MemberClustersCapability';
 import { PendingApprovalsCapability } from './components/PendingApprovalsCapability';
@@ -216,6 +220,13 @@ registerSidebarEntry({
   name: 'fleet-resource-overrides',
   label: 'Resource Overrides',
   url: '/fleet/resource-overrides',
+});
+
+registerSidebarEntry({
+  parent: 'fleet',
+  name: 'fleet-alpha-placement-policies',
+  label: 'Placement Policies (Alpha)',
+  url: '/fleet/alpha-placement-policies',
 });
 
 registerSidebarEntry({
@@ -501,6 +512,14 @@ function PlacementPolicies() {
       getPlacementStrategyType={getPlacementStrategyType}
     />
   );
+}
+
+function AlphaPlacementPolicies() {
+  return <AlphaPlacementPoliciesCapability hubCluster={getStoredHubCluster()} />;
+}
+
+function AlphaPlacementPolicyDetails() {
+  return <AlphaPlacementPolicyDetailsCapability hubCluster={getStoredHubCluster()} />;
 }
 
 function getPlacementScope(item: any): 'Cluster' | 'Namespace' {
@@ -1777,6 +1796,30 @@ registerRoute({
   name: 'fleet-placement-policies',
   exact: true,
   component: PlacementPolicies,
+});
+
+registerRoute({
+  path: '/fleet/alpha-placement-policies',
+  sidebar: 'fleet-alpha-placement-policies',
+  name: 'fleet-alpha-placement-policies',
+  exact: true,
+  component: AlphaPlacementPolicies,
+});
+
+registerRoute({
+  path: '/fleet/alpha-placement-policies/cluster/:policyName',
+  sidebar: 'fleet-alpha-placement-policies',
+  name: 'fleet-alpha-placement-policy-cluster',
+  exact: true,
+  component: AlphaPlacementPolicyDetails,
+});
+
+registerRoute({
+  path: '/fleet/alpha-placement-policies/namespace/:namespace/:policyName',
+  sidebar: 'fleet-alpha-placement-policies',
+  name: 'fleet-alpha-placement-policy-namespace',
+  exact: true,
+  component: AlphaPlacementPolicyDetails,
 });
 
 registerRoute({
